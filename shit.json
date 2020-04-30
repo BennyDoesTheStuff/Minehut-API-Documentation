@@ -205,7 +205,7 @@
         "name": "/server/<span class=\"placeholder\">Server ID</span>/change_motd",
         "auth": true,
         "endpoint": "https://api.minehut.com/server/{server-id}/change_motd",
-        "body":"{\"command\":\"&6Ooo, &athis is nice!\"}",
+        "body":"{\"motd\":\"&6Ooo, &athis is nice!\"}",
         "description": [
             "Changes the servers MOTD (message of the day)."
         ]
