@@ -260,7 +260,7 @@
         ]
     },
     {
-        "method": "post",
+        "method": "get",
         "name": "/server/<span class=\"placeholder\">Server ID</span>/plugins",
         "auth": true,
         "endpoint": "https://api.minehut.com/server/{server-id}/plugins",
