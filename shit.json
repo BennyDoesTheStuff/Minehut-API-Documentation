@@ -164,6 +164,15 @@
     },
     {
         "method": "post",
+        "name": "/server/<span class=\"placeholder\">Server ID</span>/destroy_service_admin",
+        "auth": true,
+        "endpoint": "https://api.minehut.com/server/{server-id}/destroy_service_admin",
+        "description": [
+            "Destroy server service"
+        ]
+    },
+    {
+        "method": "post",
         "name": "/server/<span class=\"placeholder\">Server ID</span>/repair_files",
         "auth": true,
         "endpoint": "https://api.minehut.com/server/{server-id}/repair_files",
@@ -205,7 +214,7 @@
         "name": "/server/<span class=\"placeholder\">Server ID</span>/change_motd",
         "auth": true,
         "endpoint": "https://api.minehut.com/server/{server-id}/change_motd",
-        "body":"{\"command\":\"&6Ooo, &athis is nice!\"}",
+        "body":"{\"motd\":\"&6Ooo, &athis is nice!\"}",
         "description": [
             "Changes the servers MOTD (message of the day)."
         ]
@@ -260,7 +269,7 @@
         ]
     },
     {
-        "method": "post",
+        "method": "get",
         "name": "/server/<span class=\"placeholder\">Server ID</span>/plugins",
         "auth": true,
         "endpoint": "https://api.minehut.com/server/{server-id}/plugins",
@@ -302,7 +311,7 @@
         ]
     },
     {
-        "method": "post",
+        "method": "get",
         "name": "/file/<span class=\"placeholder\">Server ID</span>/list",
         "auth": true,
         "endpoint": "https://api.minehut.com/file/{server-id}/list",
@@ -314,7 +323,7 @@
         }
     },
     {
-        "method": "post",
+        "method": "get",
         "name": "/file/<span class=\"placeholder\">Server ID</span>/list/<span class=\"placeholder\">Path</span>",
         "auth": true,
         "endpoint": "https://api.minehut.com/file/{server-id}/list/{path}",
@@ -326,7 +335,7 @@
         }
     },
     {
-        "method": "post",
+        "method": "get",
         "name": "/file/<span class=\"placeholder\">Server ID</span>/read/<span class=\"placeholder\">File path</span>",
         "auth": true,
         "endpoint": "https://api.minehut.com/file/{server-id}/read/{file-path}",
@@ -590,24 +599,6 @@
         "endpoint": "https://api.minehut.com/admin/delete/user",
         "description": [
             "Delete account"
-        ]
-    },
-    {
-        "method": "get",
-        "name": "/server/name?byName=true",
-        "auth": true,
-        "endpoint": "https://api.minehut.com/server/name?byName=true",
-        "description": [
-            "Server lookup"
-        ]
-    },
-    {
-        "method": "post",
-        "name": "/server/name/destroy_service_admin",
-        "auth": true,
-        "endpoint": "https://api.minehut.com/server/name/destroy_service_admin",
-        "description": [
-            "Destroy server service"
         ]
     },
     {
